@@ -1,0 +1,186 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+#main{
+  height: 100vh;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  margin: 4rem 4rem 1rem;
+}
+.subtitle{
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+}
+.text{
+  font-family: 'Noto Sans Display', sans-serif;
+}
+/* header */
+#header{
+  background: linear-gradient(green, white);
+  width: 100vw;
+  height: 30vh;
+}
+#img{
+  display: flex;
+  justify-content: center;
+}
+#borda{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 15rem;
+  margin-top: -8rem;
+  border-radius: 50%;
+  background-color: white;
+}
+img{
+  width: 14rem;
+  clip-path:circle();
+  border: 1px solid white;
+}
+/* body */
+#name{
+  text-align: center;
+}
+#nome{
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+  margin: 0;
+}
+#job{
+  font-family: 'Noto Sans Display', sans-serif;
+  margin-top: 0;
+}
+#buttons{
+  display: flex;
+  justify-content: center;  
+}
+#btns{
+  display: grid ;
+}
+.btn{
+  background-color: green;
+  margin: 0.7rem 0;
+  padding: 0.5rem 4rem;
+  border-radius: 1rem;
+  color: white;
+  font-family: "roboto flex", sans-serif;
+  font-size: 1.2rem;
+}
+/*icons*/
+#social{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.icons img{
+  width: 2.5rem;
+  padding: 0 1rem;
+}
+/*********** about ***********/
+
+.ilustra{
+  display: flex;
+  justify-content: center;
+}
+.images{
+  width: 30rem;
+}
+
+/***** Serviços ******/
+#listaServ{
+  display: flex;
+  justify-content: center;
+}
+.lista li{
+ list-style-type:circle;
+ margin-bottom: 3px;
+}
+#serv{
+  text-align: center;
+}
+/******* Contato ******/
+#contact h2{
+  text-align: center;
+}
+.iContato{
+  width: 3rem;
+}
+.iconeContato{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.iconeContato img{
+  margin-right: 1rem;
+}
+#contatos{
+  display: flex;
+  justify-content: center;
+}
+.textContato{
+  color: rgb(3, 3, 3);
+  font-family: "roboto flex", sans-serif;
+  font-size: 1.2rem;
+}/******* footer ******/
+
+#footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+  background-color: rgb(28, 31, 31);
+}
+#copy {
+  color: white;
+  font-family: "roboto flex", sans-serif;
+  font-size: 0.8rem;
+}
+#copy a {
+  color: white;
+  font-family: "roboto flex", sans-serif;
+  font-size: 0.8rem;
+  border-bottom: solid 1px white;
+}
+
+
+/***** media queries ******/
+@media (min-width: 650px){
+#about{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+#sobre{
+  width: 50%;
+}
+.ilustra{
+  width: 50%;
+}
+#conteudoServ{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#listaServ{
+  width: 50%;
+}
+#contato{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contatos{
+  width: 50%;
+}
+}
