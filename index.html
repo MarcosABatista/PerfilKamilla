@@ -5,79 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- STYLE -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Noto+Sans+Display&family=Roboto+Flex:opsz,wght@8..144,500&display=swap"
-      rel="stylesheet"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Noto+Sans+Display&family=Roboto+Flex:opsz,wght@8..144,500&display=swap"rel="stylesheet"/>
+    
     <title>Kamilla Rocha</title>
   </head>
   <body>
+    <header>
+      <nav id="nav" class="container">
+        <div id="logo">
+          <a href="#">Kamilla R. Castro</a>
+        </div>
+        <div id="nav-botao">
+          <a class="botao" href="https://wa.me/5527995194958" target="_blank">Agendar avaliação gratuita</a>
+          <a class="botao" href="PV/desperteseucorpo.html" target="_blank">Livre-se das dores</a>
+        </div>
+      </nav>
+    </header>
     <main id="corpo">
-      <!-- principal -->
-      <header id="header"></header>
-      <div id="img">
-        <div id="borda">
-          <img src="assets/files/Design sem nome (1).png" />
+      <!-- Apresentação -->
+      <section id="home" class="container">
+        <div id="pessoa">
+          <h3 id="nome">Kamilla Rocha de Castro</h3>
+          <h4 id="profissao">Fisioterapeuta</h4>
+          <h1 id="titulo">Transformando movimentos em bem-estar, uma sessão de fisioterapia de cada vez.</h1>
+          <a href="https://wa.me/5527995194958" target="_blank" class="botao">Entrar em contato</a>
         </div>
-      </div>
-      <div id="name">
-        <h1 id="nome">Kamilla Rocha</h1>
-        <h3 id="job">Fisioterapeuta</h3>
-      </div>
-      <div id="buttons">
-        <div id="btns">
-          <a href="#about" class="btn">Sobre</a>
-
-          <a href="#servicos" class="btn">Serviços</a>
-
-          <a href="#contact" class="btn">Contato</a>
-        </div>
-      </div>
-      <div id="social">
-        <a
-          href="https://www.instagram.com/drakamillacastro/"
-          target="_blank"
-          class="icons"
-        >
-          <img src="assets/icons/SVG/instagram1.svg"
-        /></a>
-        <a
-          href="https://www.facebook.com/kamila.rochadecastro"
-          target="_blank"
-          class="icons"
-        >
-          <img src="assets/icons/SVG/facebook.svg" />
-        </a>
-        <a href="mailto:kamillar.castro@hotmail.com" class="icons">
-          <img src="assets/icons/SVG/gmail.svg" />
-        </a>
-      </div>
-      <section class="container" id="about">
-        <div id="sobre">
-          <h2 class="subtitle">
-            Olá Prazer, meu nome é Kamilla Rocha de Castro,
-          </h2>
-          <p class="text">
-            Tenho 22 anos, sou fisioterapeuta formada pela Faculdade Adventista
-            da Bahia, apaixonada pela fisioterapia traumato-ortopédica, terapia
-            manual e pilates. Atualmente sou fisioterapeuta na cidade de
-            Ecoporanga - ES, onde também realizo atendimento particular a
-            domicílio. Nasci e cresci em Ecoporanga no interior do estado do
-            Espirito Santo. Gosto de praticar pilates, ioga e meditação ao ar
-            livre. Meus hobbies são: uma boa música no sítio, me encontrar em
-            uma roda de amigos, sentar ao redor de uma fogueira cantando,
-            conversando, vendo o luar e as estrelas.
-          </p>
-        </div>
-        <div class="ilustra">
-          <img src="assets/icons/SVG/pixeltrue-welcome-1.svg" class="images" />
+        <div id="img">
+          <div id="">
+            <img src="assets/files/Design sem nome (1).png" class="img-thumbnail">
+          </div>
+        </div>      
+      </section>   
+      <!-- imagem de divisão -->
+      <section class="container" id="divisao-img">
+        <div id="divisao">
+          <img id="img-divisao" src="assets/files/Fisioterapia essencial para recuperar movimentos, aliviar dores e promover uma vida mais saudável e ativa..jpg">
         </div>
       </section>
-      <section class="container" id="servicos">
+      
+      <section class="container" id="beneficio">
+          <h2 id="titulo-beneficio"><b>Beneficios da Fisioterapia</b></h2>
+          <div id="beneficios">
+            <div class="card" style="width: 18rem;">
+              <img src="assets/files/toa-heftiba-hBLf2nvp-Yc-unsplash.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Alívio da Dor:</b><br>Técnicas como terapia manual, exercícios específicos e modalidades de 
+                  tratamento como ultrassom e estimulação elétrica ajudam a reduzir a dor aguda e crônica, promovendo o bem-estar.</p>              
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="assets/files/sincerely-media-mvHuY-t4QII-unsplash.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Recuperação Pós-Cirúrgica:</b><br>Programas personalizados de reabilitação 
+                  auxiliam na recuperação rápida e segura após cirurgias, reduzindo complicações e acelerando o retorno às atividades normais.</p>              
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="assets/files/rosa-rafael-cJwl8182Mjs-unsplash.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Gerenciamento de Condições Crônicas:</b><br>Para condições como artrite, diabetes e doenças cardíacas, 
+                  a fisioterapia oferece programas de exercícios e orientações que ajudam a controlar sintomas e melhorar a qualidade de vida.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container" id="sobre">
+          <div id="quemsou">
+            <h2 id="titulo-beneficio" style="text-align: center;"><b>Um pouco sobre mim</b></h2>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="assets/files/perfil kamilla.jpeg.jfif" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Olá Prazer, meu nome é Kamilla Rocha de Castro,</h5>
+                    <p class="card-text">Sou fisioterapeuta desde 2021, 
+                      apaixonada pela fisioterapia e suas ramificações. Pós graduada em traumato-ortopédica e terapia manual. Com certificação em pilates 
+                      e especialista em aperfeiçoamento entre interprofissionalidade
+                      na atenção primária a saúde. Atualmente sou fisioterapeuta 
+                      na cidade de Ecoporanga-ES, onde realizo atendimentos na rede publica em atenção primária a saúde e também
+                      atendimentos particulares a domicílio. Nasci e cresci em 
+                      Ecoporanga no interior do estado do Espirito Santo. Gosto de praticar pilates, ioga e meditação ao ar livre. 
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="servicos">
         <div id="serv">
           <h2 class="subtitle">Serviços</h2>
         </div>
@@ -85,67 +109,28 @@
           <div id="listaServ">
             <ul class="lista">
               <li class="text">Fisioterapia Ortopedica</li>
+              <li class="text">Reabilitação pós-cirurgica</li>
+              <li class="text">Tratamento pós-AVC</li>
               <li class="text">Fisioterapia Geriátrica</li>
               <li class="text">Massagem Relaxante</li>
               <li class="text">Ventosaterapia</li>
               <li class="text">Bandagem Funcional</li>
               <li class="text">Agulhamento a seco</li>
-              <li class="text">Banbuterapia</li>
             </ul>
           </div>
           <div class="ilustra">
             <img src="assets/icons/SVG/pixeltrue-yoga-1.svg" class="images" />
           </div>
         </div>
-      </section>
-      <section class="container" id="contact">
-        <h2 class="subtitle">Contato</h2>
-        <div id="contato">
-          <div id="contatos">
-            <div>
-              <a
-                href="https://wa.me/5527995194958"
-                target="_blank"
-                class="iconeContato"
-              >
-                <img
-                  src="assets/icons/SVG/icons8-whatsapp.gif"
-                  class="iContato"
-                />
-                <p class="textContato">Whatsaap</p>
-              </a>
-              <a
-                href="https://t.me/kamillaCastro"
-                target="_blank"
-                class="iconeContato"
-              >
-                <img
-                  src="assets/icons/SVG/icons8-telegram-app.gif"
-                  class="iContato"
-                />
-                <p class="textContato">Telegram</p>
-              </a>
-              <a href="mailto:kamillar.castro@hotmail.com" class="iconeContato">
-                <img
-                  src="assets/icons/SVG/icons8-gmail-logo.gif"
-                  class="iContato"
-                />
-                <p class="textContato">Email</p>
-              </a>
-            </div>
-          </div>
-          <div class="ilustra">
-            <img src="assets/icons/SVG/pixeltrue-contact.svg" class="images" />
-          </div>
-        </div>
-      </section>
+      </section>      
 
       <footer id="footer">
         <p id="copy">
-          <a href="https://marcosabatista.github.io/" target="_blank">
-            Marcos araujo
+          &#169;
+          <a href="https://experience7.com.br/" target="_blank">
+            Experience7 - 
           </a>
-          &#169; 2022
+            2022
         </p>
       </footer>
     </main>

@@ -3,22 +3,102 @@ body{
   padding: 0;
   box-sizing: border-box;
 }
-html{
-  scroll-behavior: smooth;
-}
-#main{
-  height: 100vh;
-}
 a{
-  text-decoration: none;
-  text-align: center;
+  text-decoration: none !important;
+  text-align: center !important;
 }
-.container{
-  margin: 4rem 4rem 1rem;
+.botao{
+  color: #1c5702;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: solid 1px black;
+  font-family: "roboto", sans-serif;
 }
+.botao:hover{
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background: #7ed957;
+  border: solid 1px black;
+  transition: 0.5s;
+}
+#divisao-img{
+  margin-bottom: 5rem ;
+}
+/** Navegação **/
+header{
+  background: #d8f0ce ;
+}
+#logo a{
+  font-family: "roboto", sans-serif;
+  color: #1c5702;
+  font-size: 1.3rem;
+}
+#nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.5rem;
+}
+#home{
+  display: flex;
+  height: 75vh;
+  align-items: center;
+  margin: 0 10%;
+}
+#pessoa{
+  width: 50%;
+}
+#img{
+  width: 50%;
+}
+#img img{
+  width: 22rem;
+}
+#nome{
+  font-size: 2.3rem;
+  font-family: "roboto",700 sans-serif;
+}
+#profissao{
+  font-size: 1.1rem;
+  color: #a6a6a6;
+  margin-top: -0.7rem;
+  margin-bottom: 1rem;
+}
+#titulo{
+  width: 80%;
+  margin-bottom: 2rem;
+  font-family: "roboto", sans-serif;
+}
+/*Beneficios*/
+#beneficios{
+  display: flex;
+  justify-content: space-around;
+}
+#titulo-beneficio{
+  font-family: "roboto", sans-serif;
+  color: #1c5702;
+  margin-left: 5%;
+  margin-bottom: 2rem;
+}
+#beneficio .card .card-img-top{
+  width: 100%;
+ height: fit-content;
+ display: inline-block;
+}
+#beneficio{
+  margin-bottom: 5rem;
+}
+
+/* sobre */
+#quemsou .card-title .card-text{
+  font-family: "roboto",  sans-serif;
+}
+
 .subtitle{
-  font-family: 'Caveat', cursive;
+  font-family: 'roboto', sans-serif;
   font-size: 2rem;
+  color: #1c5702;
 }
 .text{
   font-family: 'Noto Sans Display', sans-serif;
@@ -29,65 +109,19 @@ a{
   width: 100vw;
   height: 30vh;
 }
-#img{
-  display: flex;
-  justify-content: center;
- 
-}
-#borda{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 15rem;
-  height: 15rem;
-  margin-top: -8rem;
-  border-radius: 50%;
-  background-color: white;
-}
+
 img{
   width: 14rem;
-  clip-path:circle();
   border: 1px solid white;
 }
-/* body */
-#name{
-  text-align: center;
+/*  Divisão  */
+#divisao{
+  width: 100%;
 }
-#nome{
-  font-family: 'Caveat', cursive;
-  font-size: 3rem;
-  margin: 0;
+#img-divisao{
+  width: 100%;
 }
-#job{
-  font-family: 'Noto Sans Display', sans-serif;
-  margin-top: 0;
-}
-#buttons{
-  display: flex;
-  justify-content: center;  
-}
-#btns{
-  display: grid ;
-}
-.btn{
-  background-color: green;
-  margin: 0.7rem 0;
-  padding: 0.5rem 4rem;
-  border-radius: 1rem;
-  color: white;
-  font-family: "roboto flex", sans-serif;
-  font-size: 1.2rem;
-}
-/*icons*/
-#social{
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-}
-.icons img{
-  width: 2.5rem;
-  padding: 0 1rem;
-}
+
 /*********** about ***********/
 
 .ilustra{
@@ -98,7 +132,14 @@ img{
   width: 30rem;
 }
 
+#quemsou .card{
+  width: fit-content;
+}
+
 /***** Serviços ******/
+#servicos{
+  background: #d8f0ce;
+}
 #listaServ{
   display: flex;
   justify-content: center;
@@ -106,9 +147,17 @@ img{
 .lista li{
  list-style-type:circle;
  margin-bottom: 3px;
+ font-family: "roboto", sans-serif;
 }
 #serv{
   text-align: center;
+  margin-top: 3rem;
+  padding-top: 4rem;
+}
+#conteudoServ{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 /******* Contato ******/
 #contact h2{
@@ -157,21 +206,68 @@ img{
 
 
 /***** media queries ******/
-@media (min-width: 650px){
-#about{
- display: flex;
- justify-content: center;
- align-items: center;
+@media (max-width: 850px){
+#nav a{
+ font-size: 0.7rem;
 }
-#sobre{
-  width: 50%;
+#home{
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: auto;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
-.ilustra{
-  width: 50%;
+#nome{
+  font-size: 1.2rem;
+}
+#titulo{
+  font-size: 1.5rem;
+}
+#profissao{
+  font-size: 0.7rem;
+}
+#pessoa{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#img{
+  margin-top: 1rem;
+  width: 75%;
+}
+#pessoa a{
+  font-size: 0.8rem;
+  text-align: center;
+}
+#titulo-beneficio{
+  font-size: 1.5rem;
+}
+#beneficios{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+#beneficios .card{
+  margin-bottom: 0.5rem;
+}
+
+#quemsou .card{
+  width: fit-content;
+}
+#quemsou .card img{
+  width: auto;
+}
+
+.ilustra img{
+  width: 25rem;
 }
 #conteudoServ{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 #listaServ{
@@ -185,4 +281,9 @@ img{
 #contatos{
   width: 50%;
 }
+}
+@media (max-width: 410px){
+  #nav a{
+    font-size: 0.45rem;
+   }
 }

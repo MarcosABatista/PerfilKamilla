@@ -1,0 +1,263 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    text-align: center;
+    color: #f6decf;
+    background: #6f6057;
+    padding: 0.5rem 0;
+    font-family: "Roboto", sans-serif;}
+#body{
+    background: #b4a194;
+}
+.texto{
+    color:#473a33;
+    font-family: "Roboto", sans-serif;
+}
+img{
+    width: 70%;
+    border-radius: 5px;
+}
+
+#apresentacao{
+    padding: 1% 10%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+#boxapresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding-bottom: 3rem;   
+}
+.box-texto{
+    margin-bottom:1rem;
+}
+
+#vls{
+    width: 40%;
+}
+
+.botao{
+    text-decoration: none;
+    color:#f6decf;
+    background: #865542;
+    padding: 1rem 7rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+}
+/***** Depoimentos ******/
+
+#depoimentos{
+    padding: 0 10%;
+    text-align: center;
+}
+#divdepoimentos{
+    display: flex;
+    padding: 5% 10%;  
+    align-items: center;
+    justify-content: space-around;  
+}
+.boxdescricao{
+    display: flex;
+    align-items: center;
+    margin: 2rem 10%;
+    justify-content: center;
+}
+.box-texto{
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+}
+/*Duvidas*/
+#duvidas{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    color: #473a33;
+    text-align: center;
+    text-transform: uppercase;
+}
+ul li{
+    color: #564a44;
+    list-style: circle;
+    align-items: center;
+    padding: 0.1rem 0;
+    font-family: "Roboto", sans-serif;
+}
+ol li{
+    color: #564a44;
+    list-style: circle;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 10%;
+}
+
+/*Oferta*/
+#divoferta{
+    margin: 0 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#divoferta img{
+    width: 40rem;
+    margin-bottom: 3rem;
+}
+#divoferta .botao{
+    margin-bottom: 5rem;
+}
+/*faq*/
+#faq{
+    width: 100%;
+    padding: 5rem 25%;  
+    color: #737373; 
+}
+.accordion-body{
+    color: #737373 !important;
+}
+@media only screen and (max-width: 1150px){
+    #boxapresentacao{
+        flex-direction: column;
+    }
+    .box-texto{
+        padding-top: 2rem;
+        width: 100%;
+    }
+    .botao{
+        font-size: 0.8rem;
+        padding: 0.8rem 4rem;
+    }  
+    #divdepoimentos{
+        flex-direction: column;
+    }  
+    .boxdescricao{
+        flex-direction: column;
+        margin: 0 2%;
+        padding: 2rem 0;        
+    }
+    #capa{
+        width: 100%;
+    }
+    #title{
+        font-size: 1rem;
+    }
+    ul li{
+        font-size: 1rem;
+    }
+    .livro{
+        width: 15rem;
+        padding: 1rem 2rem;
+    }
+    .icone{
+        width: 1.5rem;
+    }
+    #divoferta img{
+        width: 20rem;
+        margin-bottom: 3rem;
+    }
+    #faq{
+        padding: 2rem 10%;  
+    }
+}
+@media only screen and (max-width: 900px){
+    #boxapresentacao{
+        flex-direction: column;
+    }
+    .box-texto{
+        padding-top: 2rem;
+        width: 100%;
+    }
+    .botao{
+        font-size: 0.8rem;
+        padding: 0.8rem 4rem;
+    }  
+    #divdepoimentos{
+        flex-direction: column;
+    }  
+    .boxdescricao{
+        flex-direction: column;
+        margin: 0 2%;
+        padding: 2rem 0;        
+    }
+    #capa{
+        width: 100%;
+    }
+    #title{
+        font-size: 1rem;
+    }
+    ul li{
+        font-size: 1rem;
+    }
+    ol li{
+        font-size: 1rem;
+    }
+    .livro{
+        width: 15rem;
+        padding: 1rem 2rem;
+    }    
+    #divoferta img{
+        width: 20rem;
+        margin-bottom: 3rem;
+    }
+    #faq{
+        padding: 2rem 10%;  
+    }
+}
+@media only screen and (max-width: 600px){
+    header h3{
+        font-size: 20px;
+    }
+    .texto{
+        font-size: 0.99rem;
+    }
+    #boxapresentacao{
+        flex-direction: column;
+    }
+    .box-texto{
+        padding-top: 2rem;
+        width: 100%;
+    }
+    .botao{
+        font-size: 0.8rem;
+        padding: 0.8rem 4rem;
+    }
+    #divdepoimentos{
+        flex-direction: column;
+    }
+    .boxdescricao{
+        flex-direction: column;
+        margin: 0 2%;
+        padding: 2rem 0;        
+    }    
+    #title{
+        font-size: 1rem;
+    }
+    ul li{
+        font-size: 1rem;
+    }
+    ol li{
+        font-size: 1rem;
+    }
+    .livro{
+        width: 15rem;
+        padding: 1rem 2rem;
+    }    
+    #divoferta img{
+        width: 20rem;
+        margin-bottom: 3rem;
+    }
+    #faq{
+        padding: 2rem 10%;  
+    }
+}
